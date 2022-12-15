@@ -1,0 +1,629 @@
+/*
+Тема принадлежит и создана VaporousCreeper#9514
+  
+Фоновое изображение: https://wpblink.com/sites/default/files/wallpaper/anime/66761/sword-art-online-ii-wallpapers-hd-66761-327252.png
+Модуль Transparency2: https://raw.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Modules/transparency2.css — Ruben7173#5048
+
+2 предмета выше не принадлежат мне, они достаются уважаемым владельцам
+*/
+
+:корень{
+    --background: url('https://images.alphacoders.com/632/632525.png');
+    --activetext-color: белый;
+
+    --основной1-цвет: красный;
+    --основной2-цвет: rgba(255,0,0,0,5);
+    --primary3-color: rgba(100,0,0,0,6);
+
+    --secondary1-color: rgba(50,50,50,0.3);
+    --secondary2-color: rgba(100,100,100,0,5);
+    --secondary3-color: rgba(0,0,0,0,5);
+
+    --transparency-1: линейный градиент (вправо, rgba (0,0,0,0,5), rgba (0,0,0,0,5));
+	--transparency-2: линейный градиент (вправо, rgba (0,0,0,0,5), rgba (0,0,0,0,5));
+	--transparency-3: линейный градиент (вправо, rgba (0,0,0,0,5), rgba (0,0,0,0,5));
+	--transparency-4: линейный градиент (вправо, rgba (0,0,0,0,5), rgba (0,0,0,0,5));
+    --transparency-5: линейный градиент (вправо, rgba (0,0,0,0,5), rgba (0,0,0,0,5));
+}
+
+/*------------------------------------------------ --------*/
+	# приложение-монтирование {
+		фон: var(--background-image);
+	}
+	
+	/* удаление фона */
+
+	/* Прозрачность гильдии и верхней панели */
+	.theme-dark .wrapper-1_HaEi {
+		фон:прозрачный;
+		фоновое изображение: var(--transparency-1);
+	}
+	
+	/* прозрачность для каналов и списка участников, приватных каналов и левой части настроек*/
+	.container-1NXEtd, .privateChannels-oVe7HL, .app-3xd6d0 .standardSidebarView-E9Pc3j, .app-3xd6d0 .container-2cd8Mz {
+		фон: прозрачный;
+		фоновое изображение: var(--transparency-2);
+	}
+	.theme-dark .panels-3wFtMD, .theme-light .panels-3wFtMD {
+		фон: var(--transparency-2);
+	}
+	/* чат, верхняя область и другие второстепенные страницы */
+	.app-3xd6d0 .chat-2ZfjoI, .app-3xd6d0 .scrollableContainer-15eg7h {
+		фон: прозрачный;
+		фоновое изображение: var(--transparency-3);
+	}
+	/* удаление цвета из определенного класса */
+	.panels-j1Uci_ {
+		цвет фона: прозрачный;
+	}
+	/* дополнительно для прозрачности 3 особый случай */
+	.themeDark-3Ap_7i, .app-3xd6d0 .chat-3bRxxu {
+		цвет фона: прозрачный;
+		фоновое изображение: var(--transparency-3);
+	}
+	.typeWindows-2-g3UY {
+		фоновое изображение: var(--transparency-5);
+	}
+	/* удаляет поля из верхней области и добавляет их к навигационным кнопкам + логотип Discord */
+	.typeWindows-2-g3UY {
+		высота: 21px;
+		поле сверху: 0px;
+	}
+	/* убираем рамку под лучший диссонанс на каналах */
+	.unread-1xRYoj {
+		дисплей:нет;
+	}
+	/* исправления */
+	.theme-темный {
+		--background-primary: нет;
+		--background-secondary: нет;
+		--background-tertiary: нет;
+		--background-accent: нет;
+	}
+/*------------------------------------------------ --------*/
+
+/*Сама тема*/
+	/*Фоновое изображение*/
+	#приложение-монтирование,
+	# приложение-монтирование .container-16j22k {
+		фоновое изображение: var(--background);
+		фоновая позиция: центр;
+		размер фона: обложка;
+	}
+
+	/*Дом*/
+	#app-mount .container-1r6BKw {фон: прозрачный;}
+ 
+	#приложение-монтирование .itemCard-v9viV7,
+	# приложение-монтирование .popout-38lTFE {
+		цвет фона: var(--secondary3-color)
+	}
+	#app-mount .itemCard-v9viV7:наведение,
+	# app-mount .itemCard-v9viV7.active-1xchHY {
+		цвет фона: var(--secondary2-color);
+	}
+	# app-mount .body-1ld4H7 {цвет фона: var (--secondary1-color);}
+
+	#app-mount .item-3HknzM[aria-label="Добавить в друзья"] {цвет фона: var(--primary1-color)!важно}
+	#app-mount .item-3HknzM[style*="rgba(67, 181, 129, 0.2)"] {цвет фона: var(--primary2-color)!важно; цвет: var(--primary1-color)!важно;}
+
+	#приложение-монтирование .container-1D34oG {
+		цвет фона: прозрачный;
+		фоновое изображение: переменная (--transparency-1)
+	}
+
+	#app-mount .wrapper-2qzCYF {фон: прозрачный; нижняя граница: 2px сплошная var(--primary3-color);}
+	# app-mount .centerButton-3CaNcJ {цвет фона: var (--secondary1-color)}
+	#app-mount .leaveButton-2YnTyt {цвет фона: var(--primary3-color);}
+
+	/*Серверы*/
+	# app-mount .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 {цвет фона: var(--primary3-color)}
+	#app-mount .wrapper-3NnKdC {цвет фона: var(--secondary3-color);}
+	# app-mount .wrapper-1BJsBx .childWrapper-anI2G9 {
+		цвет фона: var(--primary3-color);
+		цвет: var(--activetext-color);
+	}
+
+	# app-mount .circleIconButton-jET_ig {цвет фона: var (--secondary2-color); цвет: var(--activetext-color);}
+	#app-mount .circleIconButton-jET_ig:hover {цвет фона: var(--primary3-color)!важно;}
+
+
+	# app-mount .numberBadge-2s8kKX {цвет фона: var (--primary1-color)! важно}
+
+	#app-mount #bd-pub-li .wrapper-25eVIn {цвет фона: var(--secondary1-color)}
+
+	.folder .wrapper-1BJsBx {цвет фона: var (--secondary2-color)! важно; переход: background-color .15s easy-out;}
+	.folder .wrapper-1BJsBx: hover {цвет фона: var (--primary3-color)! важно;}
+
+	#app-mount .folder-21wGz3 {цвет фона: прозрачный;}
+	#app-mount .expandedFolderBackground-1cujaW {цвет фона: var(--secondary1-color);}
+	# app-mount .expandedFolderBackground-1cujaW.collapsed-2ZrjoL {
+		цвет фона: прозрачный;
+		переход: background-color .15s easy-out;
+	}
+		/*Ускорение сервера*/
+		#app-mount .perksModal-fSYqOq {фон: переменная (--transparency-1);}
+
+		# app-mount .ctaBar-2UsjF2 {цвет фона: var (--secondary1-color); радиус границы: 8px}
+		#app-mount .tierMarkerBackground-3q29am {цвет фона: прозрачный;}
+
+		# app-mount .carouselItemSelected-JFUsnG .tierBody-16Chc9 {цвет фона: var (--secondary1-color);}
+		#app-mount .perk-2WeBWW {цвет фона: var(--secondary1-color);}
+			/*МенюСервера*/
+			#app-mount .tierHeaderLocked-1a2opw {цвет фона: var(--secondary3-color);}
+			#app-mount .tierBody-x9kBBp {цвет фона: var(--secondary1-color);}
+
+
+		/*Каналы*/
+		# приложение-монтирование .containerDefault-3tr_sE {
+			цвет фона: var(--primary3-color);
+			высота: 30 пикселей; выравнивание текста: по центру;
+			радиус границы: 10px;
+			отступ: 5px 5px 0 5px;
+		}
+		#приложение-монтирование .container-3w7J-x,
+		# приложение-монтирование .activityPanel-28dQGo {
+			фоновое изображение: var(--transparency-1);
+			цвет фона: rgba (0,0,0,0);
+			нижняя граница: 0;
+		}
+
+		#app-mount .containerDefault-3tr_sE {margin-top: 15px;}
+		#app-mount .unreadBar-3YD_k9 {цвет фона: var(--primary1-color);}
+		#app-mount .containerDefault--pIXnN {поле справа: 10px;}
+
+
+			/*Текст*/
+			#app-mount .containerDefault--pIXnN .content-1x5b-n:hover {ширина: 100%;}
+			#app-mount .containerDefault--pIXnN.selected-3LIHYU .content-1x5b-n {ширина: 100%;}
+			# app-mount .content-1x5b-n {цвет фона: var(--secondary1-color)}
+			#app-mount .content-1x5b-n:наведение,
+			#app-mount .containerDefault--pIXnN.selected-3LIHYU .content-1x5b-n {цвет фона: var(--secondary2-color)}
+			#app-mount .containerDefault--pIXnN .content-1x5b-n{
+				ширина: 190 пикселей;
+				переход: ширина 0,2 с;
+				функция синхронизации перехода: легкость входа-выхода;
+			}
+
+			#app-mount .containerDefault--pIXnN .modeMuted-onO3r-div.content-1x5b-n {цвет фона: var(--primary3-color);}
+
+				/*Встроить*/
+				#приложение-монтирование .embedFull-2tM8-- {
+					цвет фона: var(--secondary1-color);
+					граница слева: сплошная 4 пикселя;
+					граница справа: 4 пикселя сплошная;
+					радиус границы: 10px! важно;
+				}
+
+
+			/*Голос*/
+			#app-mount .containerDefault--pIXnN .modeConnected-3IsKId div.content-1x5b-n {ширина: 100%; цвет фона: var(--secondary2-color);}
+			#app-mount .containerDefault--pIXnN .modeLocked-25wLHj div.content-1x5b-n {цвет фона: var(--primary3-color);}
+
+				/*Информация о ВК*/
+				#app-mount .panels-j1Uci_ {цвет фона: прозрачный;}
+				# app-mount .container-1giJp5 {цвет фона: var (--secondary3-color);}
+				#app-mount .button-14-BFJ[aria-label="Отключить"] {цвет фона: var(--primary3-color);}
+				#app-mount .button-14-BFJ[aria-label="Отключить"]:hover {цвет фона: var(--primary3-color);}
+
+				/*Пользователь ВК*/
+				# app-mount .list-2bwCXU { padding-left: 10px; }
+				#app-mount .avatarSpeaking-3MqCHL {box-shadow:0 0 0 2px var(--primary1-color); }
+
+				#app-mount .voiceUser-14U_Ns .content-3xS9Lh: hover {цвет фона: прозрачный;}
+				# приложение-монтирование .voiceUser-14U_Ns {
+					переход: запас 0,2 с;
+					функция синхронизации перехода: легкость входа-выхода;
+					поле слева: 0;
+					отступ справа: 5px
+				}
+				# app-mount .voiceUser-14U_Ns: наведите курсор {
+					цвет фона: var(--secondary1-color);
+					радиус границы: 2px; поле слева: 20px;
+				}
+
+				/*Прямой эфир*/
+				#приложение-монтирование .root-25RxKh,
+				# приложение-монтирование .container-2oTpPc {
+					фон: var(--transparency-1);
+				}
+
+				#приложение-монтирование .mediaBarProgress-1xaPtl,
+				#app-mount .volumeSlider-XQocF6 div::before,
+				#app-mount .mediaBarWrapper-3D7r67 div::after,
+				# приложение-монтирование .mediaBarGrabber-1FqnbN {
+					цвет фона: var(--primary1-color);
+				}
+
+		/*Сообщения*/
+		# app-mount .hasMore-3e72_v {цвет фона: var (--secondary1-color); цвет: var(--primary1-color);}
+		# код монтирования приложения {цвет фона: var (--secondary1-color)}
+
+		#app-mount .wrapperHover-1GktnT,
+		#приложение-монтирование .упоминание {
+			цвет фона: var(--primary3-color);
+			цвет: var(--primary1-color);
+		}
+		#app-mount .упомянутый-xhSam7 {фоновый цвет: прозрачный;}
+		#app-mount .упомянутый-xhSam7 .contents-2mQqc9,
+		# app-mount .упомянутый-xhSam7 .container-1ov-mD {
+			цвет фона: var(--primary3-color);
+		}
+		#app-mount .упомянутый-xhSam7: перед {
+			фон: var(--primary1-color);
+			ширина: 3 пикселя;
+			поле слева: 72px;
+		}
+
+		#app-mount .messageGroupBlocked-3wrQQX {цвет фона: var(--secondary1-color);}
+		#app-mount .messageGroupBlockedBtn-1PBBh- {цвет: var(--primary1-color);}
+
+		#app-mount a.anchor-3Z-8Bb {цвет: переменная (--primary1-color);}
+		#app-mount .unreadMentionsBar-1VrBNe {цвет фона: var(--primary1-color);}
+		# app-mount .channelTextArea-rNsIhG .scrollableContainer-15eg7h {цвет фона: var (--secondary1-color);}
+
+		# app-mount .newMessagesBar-265mhP {цвет фона: var (--primary1-color)}
+
+		# app-mount .buttons-cl5qTG .wrapper-2aW0bm {цвет фона: var (--secondary1-color);}
+		# приложение-монтирование .message-2qnXI6 {
+			padding-top: 0;
+			заполнение снизу: 0;
+		}
+
+
+		# app-mount .contents-2mQqc9 img {margin-top: 0px;}
+		#приложение-монтирование .contents-2mQqc9,
+		# app-mount .container-1ov-mD {
+			цвет фона: var(--secondary1-color);
+			отступ: 0px 0 5px 10px;
+		}
+		#приложение-монтирование .header-23xsNx{
+			padding-top: 5px;
+		}
+
+
+	/*Полосы прокрутки*/
+	#app-mount ::-webkit-scrollbar-thumb {цвет фона: var (--primary2-color); цвет границы: прозрачный;}
+
+	#app-mount .scrollerWrap-2lJEkd ::-webkit-scrollbar-track-piece {
+		цвет фона: прозрачный;
+		цвет границы: прозрачный;
+	}
+
+	#app-mount .messagesWrapper-1sRNjr ::-webkit-scrollbar-track-piece,
+	#app-mount .peopleColumn-29fq28 ::-webkit-scrollbar-track-piece,
+	#app-mount .homeWrapperNormal-2KSUEa ::-webkit-scrollbar-track-piece {
+		цвет фона: прозрачный;
+		цвет границы: прозрачный;
+	}
+	#app-mount .messagesWrapper-1sRNjr ::-webkit-scrollbar-track,
+	#app-mount .peopleColumn-29fq28 ::-webkit-scrollbar-track,
+	# app-mount .homeWrapperNormal-2KSUEa ::-webkit-scrollbar-track {
+		цвет фона: var(--primary3-color);
+		радиус границы: 10px;
+		цвет границы: var(--primary3-color)
+	}
+
+	/*Контекстное меню и меню сервера*/
+	# app-mount .contextMenu-HLZMGh .barFill-23-gu- {цвет фона: var (--primary1-color);}
+	# app-mount .menu-Sp6bN1, # app-mount .contextMenu-HLZMGh {цвет фона: var (--secondary3-color)}
+	#app-mount .item-1GzJrl:hover , #app-mount .item-1Yvehc:hover {цвет фона: var(--secondary1-color)}
+	# app-mount .separator-2zcjq8 {цвет фона: var (--primary3-color)}
+
+	# app-mount .danger-2dXSTE: hover {фоновый цвет: var (--primary3-color)}
+	# app-mount input[type=checkbox]:checked+span {
+		цвет границы: var (--primary1-color);
+		цвет фона: var (--primary1-color)
+	}
+
+	#app-mount .leave-1DRJfn:hover {цвет фона: var(--primary3-color);}
+	# app-mount .invite-271nFU: hover {цвет фона: rgba (114 137 218, 0,5);}
+
+	/*Члены сервера*/
+	# приложение-монтирование .member-3-YXUe .layout-2DM8Md {
+		поле слева: 30px;
+		переход: край слева 0,2 с;
+		функция синхронизации перехода: легкость входа-выхода;
+		радиус границы: 10px;
+	}
+	#app-mount .layout-2DM8Md:hover {margin-left: 8px; цвет фона: var(--secondary1-color);}
+	# app-mount .selected-aXhQR6 .layout-2DM8Md { margin-left: 8px; цвет фона: var(--secondary2-color);}
+
+	#app-mount .membersGroup-v9BXpm span {color: var(--activetext-color);}
+	# app-mount .membersGroup-v9BXpm {
+		цвет фона: var(--primary3-color);
+
+		граница: 2px сплошная var(--primary3-color);
+		радиус границы: 8px;
+
+		высота: 20 пикселей;
+		отступ: 0 0 0 10 пикселей;
+		поля: 15px 8px 0 16px;
+	}
+
+	/*Настройки*/
+	#app-mount .sidebar-CFHs9e .side-8zPYf6 .item-PXvHYJ,
+	# app-mount .ui-tab-bar-item {
+		высота строки: 15 пикселей;
+		цвет фона: var(--secondary1-color);
+		ширина: 100%;
+		переход: ширина 0,2 с;
+		функция синхронизации перехода: легкость входа-выхода;
+	}
+	#app-mount .sidebar-CFHs9e .side-8zPYf6 .item-PXvHYJ: наведение,
+	# app-mount .ui-tab-bar-item: hover {
+		цвет фона: var(--secondary2-color);
+		ширина: 187 пикселей;
+	}
+	#app-mount .sidebar-CFHs9e .side-8zPYf6 .selected-3s45Ha,
+	# app-mount .ui-tab-bar-item.selected {
+		высота строки: 15 пикселей;
+		background-color: var(--secondary2-color)!важно;
+		ширина: 187 пикселей;
+	}
+	# app-mount .sidebar-CFHs9e .side-8zPYf6 .header-2RyJ0Y,
+	# app-mount .ui-tab-bar-header {
+		цвет фона: var(--primary3-color);
+		радиус границы: 3px;
+		высота строки: 28 пикселей;
+		отступ: 0 0 0 10 пикселей
+	}
+	#app-mount .ui-tab-bar-item {поле внизу: 2px}
+
+	#app-mount .sidebar-CFHs9e {отступ: 20px 18px 20px 23px; ширина: 210px}
+	# app-mount .sidebarRegion-VFTUkN {flex: 0}
+	#app-mount .contentColumn-2hrIYH {макс. ширина: 90%; отступы: 60px 30px 80px}
+
+		/*Пользовательские настройки*/
+		#app-mount .control-2BBjec .container-3auIfb svg[fill="none"] путь{
+			fill: var(--primary1-color)
+		}
+
+		#app-mount .lookFilled-1Gx00P,
+		#приложение-монтирование .control-2BBjec .container-3auIfb,
+
+		#app-mount .bd-кнопка,
+		#app-mount .bd-switch-checked,
+		#приложение-монтирование .bd-pfbtn,
+
+		#app-mount .flexChild-faoVW3 .barFill-23-gu-,
+		#app-mount .item-PXvHYJ[style*="цвет фона: rgb(114, 137, 218)"] {
+			background-color: var(--primary1-color)!важно;
+		}
+
+
+		круг #app-mount .item-26Dhrx {fill: var(--primary1-color)}
+		#app-mount .item-26Dhrx {цвет фона: var(--secondary1-color)}
+		#app-mount .item-26Dhrx[tabindex="0"] {цвет фона: var(--secondary2-color)}
+
+		#app-mount .item-26Dhrx .title-3BE6m5 {верхнее поле: 1px;}
+
+		#app-mount .game-1ipmAa:до,
+		#приложение-монтирование .keybindGroup-JQs9x_:до{
+			цвет фона: var(--secondary1-color)
+		}
+
+		#app-mount .select-2TCrqx > [class*="css-"][class*="-container"] > [class*="css-"][class*="-menu"],
+		# app-mount .css-2yldzf-control {
+			цвет фона: var(--secondary1-color);
+			цвет границы: var(--secondary1-color);
+		}
+
+		#app-mount a[target="_blank"] {color: var(--primary1-color);}
+
+		#app-mount .foreground-2aE44H {штрих: var(--primary1-color);}
+
+		# app-mount .previewOverlay-2O7_KC, # app-mount .formNotice-2_hHWR {цвет фона: var (--secondary1-color)}
+		#app-mount .media-engine-video {фон: прозрачный;}
+
+		# app-mount .wrapper-3jrx9n {цвет границы: var (--primary1-color);}
+		#app-mount .disabledSelected-2Kf0yZ {border-color: var(--secondary1-color);}
+		# app-mount .selected-mKYnfr.option-n0icdO {цвет фона: var (--primary1-color);}
+		# app-mount .option-n0icdO {цвет фона: var (--secondary2-color)}
+
+		#app-mount .focused-1mmYsC,
+		# app-mount .inputDefault-_djjkz: focus {
+			цвет границы: var(--primary1-color);
+		}
+
+		# app-mount .questionMark-CWEQZn {
+			нижняя граница: 3px;
+			цвет фона: var(--primary1-color);
+		}
+	 	
+		#приложение-монтирование .connection-1fbD7X,
+		# приложение-монтирование .accountList-33MS45 {
+			цвет фона: var(--secondary3-color);
+		}
+
+		#app-mount .connectionHeader-2MDqhu {цвет фона: var(--secondary1-color);}
+
+	 	/*Настройки сервера*/
+		#app-mount .emojiRow-zIc7ZX:до,
+		#app-mount .member-1q7VfX:до,
+		#app-mount .inviteSettingsInviteRow-3p2O-N:до,
+		#app-mount .bannedUser-1IalTM:before {
+			цвет фона: var(--secondary1-color)
+		}
+
+
+		#app-mount .deny-3nAuT6:not(.selected-2YhbGh) {цвет фона: rgba(100,0,0,0.5);}
+		#app-mount .allow-1PzSY3:not(.selected-2YhbGh) {цвет фона: rgba(0,100,0,0.5);}
+
+		# app-mount .passthrough-1c2ewQ {цвет фона: rgba (100,100,100,0,5)}
+		# app-mount .passthrough-1c2ewQ.selected-2YhbGh {цвет фона: rgb (100,100,100)}
+
+		/*Пользовательские CSS*/
+		#app-mount .ace_editor {цвет фона: var(--secondary3-color);} /*Прозрачность*/
+		#app-mount .ace_gutter, #app-mount #bd-customcss-attach-controls {цвет фона: var(--secondary3-color)}/*Прозрачность*/
+
+		# app-mount .ace_active-line {цвет фона: var (--primary3-color)}
+		# app-mount .ace_gutter-active-line {цвет фона: var (--primary3-color)}
+
+		#app-mount #bd-customcss-attach-controls {padding-left: 9px}
+
+		#app-mount #bd-customcss-detach-controls-button button {переход: 0,1 с фонового цвета, облегчение входа-выхода; цвет фона: var(--secondary1-color);}
+		#app-mount #bd-customcss-detach-controls-button button:hover {фоновый цвет: var(--primary3-color)}
+		#app-mount #bd-customcss-detach-controls-button button:active {цвет фона: var(--primary1-color)}
+
+		#app-mount #bd-customcss-detach-container {цвет фона: var(--secondary3-color)} /*Прозрачность*/
+		#app-mount #editor-detached button {фоновый цвет: var(--primary1-color)}
+
+		# app-mount .inline {цвет фона: var (--secondary1-color)! важно;}
+
+		/*ChangeLog и другие всплывающие окна*/
+		# приложение-монтирование .modal-yWgWj-,
+		# app-mount .bd-modal-inner,
+		#приложение-монтирование .messagesPopoutWrap-1MQ1bW,
+		#app-mount .messageGroupWrapper-o-Zw7G,
+		#приложение-монтирование .container-3ayLPN,
+		#app-mount .searchResultsWrap-2DKFzt,
+
+		#приложение-монтирование .реагировать-датапикер,
+		#приложение-монтирование .popoutList-T9CKZQ,
+		#app-mount .bd-modal-body,
+		#приложение-монтирование .root-1gCeng,
+		#приложение-монтирование .noiseCancellationPopout-iRK2A0,
+		# приложение-монтирование .colorPickerCustom-2CWBn2,
+
+		#app-mount .keyboardShortcutsModal-3piNz7,
+		# app-mount .bd-card {
+			цвет фона: var(--secondary1-color);
+			радиус границы: 10px;
+		}
+
+		#приложение-монтирование .footer-3rDWdC,
+		#приложение-монтирование .footer-3mqk7D,
+		# приложение-монтирование .footer-2gL1pp {
+			цвет фона: var(--secondary3-color);
+			радиус границы: 0 0 10px 10px;
+		}
+		#приложение-монтирование .header-1R_AjF,
+		# app-mount .реакция-datepicker__header {
+			цвет фона: прозрачный;
+		}
+
+	/*Всплывающее окно пользователя*/
+	# app-mount .bodyInner-245q0L {цвет фона: var (--secondary1-color)}
+	#app-mount .userPopout-xaxa6l {граница-радиус: 10px; цвет фона: var(--secondary1-color);}
+	# app-mount .bodyInnerWrapper-26fQXj {цвет фона: прозрачный}
+	# app-mount .footer-3UKYOU {цвет фона: var (--secondary3-color); отступ: 16px;}
+	# app-mount .footer-3UKYOU .inputDefault-_djjkz {цвет фона: var (--secondary1-color);}
+
+	# приложение-монтирование .topSection-y3p-_D,
+	# приложение-монтирование .body-r6_QPy {
+		цвет фона: var(--secondary3-color);
+	}
+	
+	#app-mount .activityName-1IaRLn {цвет: var(--activetext-color)!важно;}
+		
+	/*Загрузить всплывающее окно*/
+	# app-mount .uploadModal-2ifh8j, # app-mount .bgScale-1otPtc {цвет фона: var (--secondary1-color)}
+
+	# app-mount .inner-3nWsbo {цвет границы: прозрачный;}
+
+	Кнопка #app-mount .uploadModal-2ifh8j .footer-3mqk7D {высота: 39 пикселей; цвет фона: var(--secondary2-color)}
+	#app-mount button.lookFilled-1Gx00P[type=submit] {color: var(--activetext-color); поле слева: 8px}
+	# app-mount .scrollableContainer-2NUZem {цвет фона: var (--secondary1-color)}
+
+	#app-mount .instructions-2Du9gG pre {цвет фона: прозрачный;}
+	#app-mount .uploadDropModal-2kTwbc.error-kKl9o2 {цвет фона: rgba (240, 71, 71,0.5);}
+
+	/*Всплывающее окно поиска*/
+	#app-mount .searchHeader-1l-wpR,
+	# приложение-монтирование .header-ykumBX {
+		цвет фона: var(--secondary1-color);
+		радиус границы: 10px 10px 0 0;
+	}
+
+	#app-mount .channelName-1QajIf {цвет фона: прозрачный;}
+
+	# app-mount .hit-NLlWXA {цвет фона: var (--secondary2-color); радиус границы: 10px;}
+	# app-mount .searchResult-3pzFAB.expanded-v2Szsz {цвет фона: var (--secondary1-color); радиус границы: 10px;}
+
+	#app-mount .searchResult-3pzFAB {граница: 2px сплошная переменная (--secondary1-color); радиус границы: 10px; цвет фона: var(--secondary1-color)}
+	#app-mount .searchResult-3pzFAB:before {граница-радиус: 10px;}
+	#app-mount .option-96V44q: после {фонового изображения: нет;}
+
+	#app-mount .react-datepicker__day:hover {цвет фона: var(--primary1-color)}
+	#app-mount .react-datepicker__day--selected::after {цвет фона: var(--primary1-color)}
+	# app-mount .hintValue-29ny8Z {цвет фона: var (--primary1-color)}
+	#app-mount .react-datepicker__day — отключено,
+	#app-mount .react-datepicker__day -- за пределами месяца {
+		цвет фона: var(--secondary3-color)
+	}
+	#app-mount .react-datepicker__day -- отключено: наведение,
+	#app-mount .react-datepicker__day -- за пределами месяца: hover {
+		background-color: var(--primary2-color)
+	}
+
+	/*Присоединиться и создать всплывающее окно сервера*/
+	#app-mount .action-1lSjCi {граница-радиус: 10px; цвет фона: var(--secondary1-color)}
+
+	#app-mount .header-3ZP1MY {цвет: переменная (--activetext-color);}
+	#app-mount .create-3jownz .colorStandard-2KCXvj {цвет: rgb (114, 137, 218);}
+	#app-mount .join-33Tr-7 .colorStandard-2KCXvj {цвет: #43b581;}
+
+	# app-mount .inputWrapper-51e5iN input: focus {border-color: #43b581;}
+	#app-mount .sampleLink-KPFu3I {цвет: #43b581;}
+
+	#app-mount input[placeholder="Введите имя сервера"]:focus {border-color: rgb(114, 137, 218);}
+	#app-mount a[href="//discordapp.com/guidelines"] {цвет: rgb(114, 137, 218);}
+
+		/*Всплывающее окно выбора эмодзи*/
+		# app-mount .header-1nkwgG {цвет фона: var (--secondary3-color); граница сверху: 1px сплошная переменная (--secondary2-color);}
+		#app-mount .searchBar-2pWH0_ {цвет фона: var(--secondary1-color)!важно}
+
+		#app-mount .header-1nkwgG .input-1Rv96N {цвет: var(--activetext-color);}
+		#app-mount .header-1nkwgG ::-webkit-input-placeholder {цвет: var(--activetext-color);}
+
+		#app-mount .infoBar-U6oBFk {цвет фона: var(--secondary3-color);}
+		# app-mount .categories-1feg4n .selected-39BZ4S {border-color: var(--primary1-color)}
+		#app-mount .emojiPicker-3m1S-j ::-webkit-scrollbar-track {цвет фона: прозрачный;}
+
+		#app-mount #bda-qem button {color: var(--activetext-color); коробка-тень: 0 0 0 0; граница: 0;}
+		#app-mount #bda-qem button:hover {цвет фона: var(--secondary2-color);}
+		#app-mount #bda-qem button.active {цвет фона: var(--secondary2-color);}
+
+		#app-mount #bda-qem-twitch-контейнер,
+		#приложение-монтирование #bda-qem-фаворит-контейнер {
+			цвет фона: var(--secondary3-color);
+			верхняя граница: 1px сплошная var(--secondary2-color);
+		}
+
+		#app-mount .emojiPicker-3m1S-j,
+		#приложение-монтирование #bda-qem,
+		#приложение-монтирование #bda-qem-twitch,
+		#app-mount #bda-qem-фаворит,
+		#приложение-монтирование #bda-qem-emojis {
+			цвет фона: var(--secondary3-color);
+			граница: 0!важно;
+		}
+
+		/*Ошибки содержимого BBD и другие модальные окна BBD*/
+		#app-mount .error-link {цвет: var(--primary1-color);}
+		#app-mount .bd-modal-inner button {фоновый цвет: var(--primary1-color)}
+
+	/*Верхняя панель*/
+	# приложение-монтирование .typeWindows-2-g3UY {
+		цвет фона: var(--secondary3-color);
+		нижняя граница: 2px сплошная var(--primary3-color);
+		высота: 30 пикселей;
+		поле: 0px;
+	}
+
+	#app-mount .wordmark-2u86JB {вверху: 3,3 пикселя;}
+	#app-mount .winButton-3UMjdg {вверху: 1px;}
+
+	/*Основной логин*/
+	#app-mount .splashBackground-1FRCko .image-2jyRAK,
+	#app-mount .splashBackground-1FRCko холст {
+		дисплей: нет;
+	}
+	#app-mount .splashBackground-1FRCko {фоновое изображение: нет;}
+
+	# app-mount .authBox-hW6HRx {цвет фона: var (--secondary1-color); радиус границы: 10px;}
+	#app-mount .authBox-hW6HRx .linkButton-wzh5kV {цвет: var(--primary1-color);}
+	#app-mount .authBox-hW6HRx .inputDefault-_djjkz: focus {border-color: var (--primary1-color);}
+
+	#app-mount .leftSplit-1qOwnR {ширина: 80%;}
